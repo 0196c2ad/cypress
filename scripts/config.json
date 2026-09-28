@@ -1,6 +1,6 @@
 {
-  "scenario_id": "operation-pale-harbour-c2-simulation",
-  "run_id": "exercise-001",
+  "scenario_id": "операция-бледная-гавань-c2-симуляция",
+  "run_id": "учение-001",
   "actions": [
     { "id": "github_probe" },
     { "id": "google_calendar_probe" },
