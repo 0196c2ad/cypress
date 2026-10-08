@@ -1,181 +1,160 @@
-2026-10-07T23:55:40.769059Z  INFO ThreadId(01) nbdsync::logging: execution logging enabled
-2026-10-07T23:55:40.886336Z  INFO ThreadId(05) nbdsync::runner: application starting version="0.1.0" pid=2436 mode=silent target_os="windows" target_arch="x86_64"
-2026-10-07T23:55:40.886450Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=проверка канала связи
-2026-10-07T23:55:40.886469Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=учебная симуляция фиолетовой команды
-2026-10-07T23:55:40.886483Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=северный морской маяк
-2026-10-07T23:55:40.886570Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=контрольная точка наблюдения
-2026-10-07T23:55:40.887809Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=операция серого порта завершена
-2026-10-07T23:55:40.887835Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=детерминированная последовательность событий
-2026-10-07T23:55:40.887844Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=симулированный выход в сеть
-2026-10-07T23:55:40.887851Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=лабораторный полигон без реальных данных
-2026-10-07T23:55:40.887857Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=маяк не является вредоносной программой
-2026-10-07T23:55:40.887866Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=все точки назначения зафиксированы в исходном коде
-2026-10-07T23:55:40.887875Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=уровень шума сети соответствует плану упражнения
-2026-10-07T23:55:40.887924Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=отчет о выполнении отправляется в лабораторный приемник
-2026-10-07T23:55:40.887938Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=сеанс наблюдений завершен, данные переданы для анализа
-2026-10-07T23:55:40.887947Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=побережье тихо, сигналы проходят по графику
-2026-10-07T23:55:40.888058Z  INFO ThreadId(05) nbdsync::runner: fetching remote exercise configuration url=https://raw.githubusercontent.com/0196c2ad/cypress/refs/heads/develop/scripts/config.json
-2026-10-07T23:55:40.891196Z TRACE ThreadId(05) hyper_util::client::legacy::pool: checkout waiting for idle connection: ("https", raw.githubusercontent.com)
-2026-10-07T23:55:40.891350Z DEBUG ThreadId(05) reqwest::connect: starting new connection: https://raw.githubusercontent.com/
-2026-10-07T23:55:40.891413Z TRACE ThreadId(05) hyper_util::client::legacy::connect::http: Http::connect; scheme=Some("https"), host=Some("raw.githubusercontent.com"), port=None
-2026-10-07T23:55:40.924921Z DEBUG ThreadId(05) hyper_util::client::legacy::connect::http: connecting to 185.199.108.133:443
-2026-10-07T23:55:40.942377Z DEBUG ThreadId(03) hyper_util::client::legacy::connect::http: connected to 185.199.108.133:443
-2026-10-07T23:55:41.019583Z TRACE ThreadId(03) hyper_util::client::legacy::client: http1 handshake complete, spawning background dispatcher task
-2026-10-07T23:55:41.019646Z TRACE ThreadId(03) hyper_util::client::legacy::client: waiting for connection to be ready
-2026-10-07T23:55:41.020244Z TRACE ThreadId(03) hyper_util::client::legacy::client: connection is ready
-2026-10-07T23:55:41.020292Z TRACE ThreadId(03) hyper_util::client::legacy::pool: checkout dropped for ("https", raw.githubusercontent.com)
-2026-10-07T23:55:41.560325Z TRACE ThreadId(03) hyper_util::client::legacy::pool: put; add idle connection for ("https", raw.githubusercontent.com)
-2026-10-07T23:55:41.560468Z DEBUG ThreadId(03) hyper_util::client::legacy::pool: pooling idle connection for ("https", raw.githubusercontent.com)
-2026-10-07T23:55:41.560502Z TRACE ThreadId(03) reqwest::retry: shouldn't retry!
-2026-10-07T23:55:41.560578Z  INFO ThreadId(03) nbdsync::runner: remote configuration accepted elapsed_ms=672 scenario_id=операция-бледная-гавань-c2-симуляция run_id=Some("учение-001") action_count=9 fetch_max_attempts=3 fetch_retry_sleep_secs=10 min_sleep_ms=10000 max_sleep_ms=10000 min_jitter_ms=0 max_jitter_ms=0 jitter_seed=21644577302
-2026-10-07T23:55:41.560626Z  INFO ThreadId(03) nbdsync::runner: selected actions actions=[GitHubProbe, GoogleCalendarProbe, SteamProfileProbe, DecoyCollection, FilePasswordSniffing, AptSignature, SetWallpaper, PstPlaceholder, GitHubPstUpload]
-2026-10-07T23:55:41.560644Z  INFO ThreadId(03) nbdsync::runner: action start action=github_probe
-2026-10-07T23:55:41.560694Z TRACE ThreadId(03) hyper_util::client::legacy::pool: take? ("https", raw.githubusercontent.com): expiration = Some(90s)
-2026-10-07T23:55:41.560719Z DEBUG ThreadId(03) hyper_util::client::legacy::pool: reuse idle connection for ("https", raw.githubusercontent.com)
-2026-10-07T23:55:41.579652Z TRACE ThreadId(02) hyper_util::client::legacy::pool: put; add idle connection for ("https", raw.githubusercontent.com)
-2026-10-07T23:55:41.579753Z DEBUG ThreadId(02) hyper_util::client::legacy::pool: pooling idle connection for ("https", raw.githubusercontent.com)
-2026-10-07T23:55:41.579792Z TRACE ThreadId(02) reqwest::retry: shouldn't retry!
-2026-10-07T23:55:41.579838Z  INFO ThreadId(02) nbdsync::actions: outbound probe completed label="github" status=200 OK elapsed_ms=19
-2026-10-07T23:55:41.579906Z  INFO ThreadId(02) nbdsync::runner: action complete action=github_probe elapsed_ms=19
-2026-10-07T23:55:41.579927Z DEBUG ThreadId(02) nbdsync::runner: sleeping before next interval action=github_probe interval_ms=10000
-2026-10-07T23:55:51.586618Z  INFO ThreadId(02) nbdsync::runner: action start action=google_calendar_probe
-2026-10-07T23:55:51.587416Z TRACE ThreadId(02) hyper_util::client::legacy::pool: checkout waiting for idle connection: ("https", calendar.google.com)
-2026-10-07T23:55:51.587447Z DEBUG ThreadId(02) reqwest::connect: starting new connection: https://calendar.google.com/
-2026-10-07T23:55:51.587474Z TRACE ThreadId(02) hyper_util::client::legacy::connect::http: Http::connect; scheme=Some("https"), host=Some("calendar.google.com"), port=None
-2026-10-07T23:55:51.601345Z DEBUG ThreadId(02) hyper_util::client::legacy::connect::http: connecting to 192.178.188.138:443
-2026-10-07T23:55:51.619028Z DEBUG ThreadId(04) hyper_util::client::legacy::connect::http: connected to 192.178.188.138:443
-2026-10-07T23:55:51.789847Z TRACE ThreadId(04) hyper_util::client::legacy::client: http1 handshake complete, spawning background dispatcher task
-2026-10-07T23:55:51.789908Z TRACE ThreadId(04) hyper_util::client::legacy::client: waiting for connection to be ready
-2026-10-07T23:55:51.789932Z TRACE ThreadId(04) hyper_util::client::legacy::client: connection is ready
-2026-10-07T23:55:51.789941Z TRACE ThreadId(04) hyper_util::client::legacy::pool: checkout dropped for ("https", calendar.google.com)
-2026-10-07T23:55:52.164627Z TRACE ThreadId(04) reqwest::retry: shouldn't retry!
-2026-10-07T23:55:52.164748Z  INFO ThreadId(04) nbdsync::actions: outbound probe completed label="google_calendar" status=200 OK elapsed_ms=577
-2026-10-07T23:55:52.164790Z  INFO ThreadId(04) nbdsync::runner: action complete action=google_calendar_probe elapsed_ms=578
-2026-10-07T23:55:52.164802Z DEBUG ThreadId(04) nbdsync::runner: sleeping before next interval action=google_calendar_probe interval_ms=10000
-2026-10-07T23:55:52.164831Z TRACE ThreadId(04) hyper_util::client::legacy::pool: put; add idle connection for ("https", calendar.google.com)
-2026-10-07T23:55:52.164841Z DEBUG ThreadId(04) hyper_util::client::legacy::pool: pooling idle connection for ("https", calendar.google.com)
-2026-10-07T23:56:02.168119Z  INFO ThreadId(02) nbdsync::runner: action start action=steam_profile_probe
-2026-10-07T23:56:02.168299Z TRACE ThreadId(02) hyper_util::client::legacy::pool: checkout waiting for idle connection: ("https", steamcommunity.com)
-2026-10-07T23:56:02.168319Z DEBUG ThreadId(02) reqwest::connect: starting new connection: https://steamcommunity.com/
-2026-10-07T23:56:02.168337Z TRACE ThreadId(02) hyper_util::client::legacy::connect::http: Http::connect; scheme=Some("https"), host=Some("steamcommunity.com"), port=None
-2026-10-07T23:56:02.224634Z DEBUG ThreadId(02) hyper_util::client::legacy::connect::http: connecting to 104.99.228.225:443
-2026-10-07T23:56:02.238916Z DEBUG ThreadId(03) hyper_util::client::legacy::connect::http: connected to 104.99.228.225:443
-2026-10-07T23:56:02.290214Z TRACE ThreadId(03) hyper_util::client::legacy::client: http1 handshake complete, spawning background dispatcher task
-2026-10-07T23:56:02.290280Z TRACE ThreadId(03) hyper_util::client::legacy::client: waiting for connection to be ready
-2026-10-07T23:56:02.290308Z TRACE ThreadId(03) hyper_util::client::legacy::client: connection is ready
-2026-10-07T23:56:02.290316Z TRACE ThreadId(03) hyper_util::client::legacy::pool: checkout dropped for ("https", steamcommunity.com)
-2026-10-07T23:56:02.293529Z TRACE ThreadId(03) reqwest::retry: shouldn't retry!
-2026-10-07T23:56:02.293593Z  INFO ThreadId(03) nbdsync::actions: outbound probe completed label="steam_profile" status=503 Service Unavailable elapsed_ms=125
-2026-10-07T23:56:02.293643Z TRACE ThreadId(03) hyper_util::client::legacy::pool: checkout waiting for idle connection: ("https", steamcommunity.com)
-2026-10-07T23:56:02.293657Z DEBUG ThreadId(03) reqwest::connect: starting new connection: https://steamcommunity.com/
-2026-10-07T23:56:02.293669Z TRACE ThreadId(03) hyper_util::client::legacy::connect::http: Http::connect; scheme=Some("https"), host=Some("steamcommunity.com"), port=None
-2026-10-07T23:56:02.294146Z DEBUG ThreadId(04) hyper_util::client::legacy::connect::http: connecting to 104.99.228.225:443
-2026-10-07T23:56:02.311445Z DEBUG ThreadId(02) hyper_util::client::legacy::connect::http: connected to 104.99.228.225:443
-2026-10-07T23:56:02.360712Z TRACE ThreadId(02) hyper_util::client::legacy::client: http1 handshake complete, spawning background dispatcher task
-2026-10-07T23:56:02.360783Z TRACE ThreadId(02) hyper_util::client::legacy::client: waiting for connection to be ready
-2026-10-07T23:56:02.360807Z TRACE ThreadId(02) hyper_util::client::legacy::client: connection is ready
-2026-10-07T23:56:02.360816Z TRACE ThreadId(02) hyper_util::client::legacy::pool: checkout dropped for ("https", steamcommunity.com)
-2026-10-07T23:56:02.363683Z TRACE ThreadId(02) reqwest::retry: shouldn't retry!
-2026-10-07T23:56:02.363747Z  INFO ThreadId(02) nbdsync::actions: outbound probe completed label="steam_profile" status=503 Service Unavailable elapsed_ms=70
-2026-10-07T23:56:02.363791Z TRACE ThreadId(02) hyper_util::client::legacy::pool: checkout waiting for idle connection: ("https", steamcommunity.com)
-2026-10-07T23:56:02.363804Z DEBUG ThreadId(02) reqwest::connect: starting new connection: https://steamcommunity.com/
-2026-10-07T23:56:02.363816Z TRACE ThreadId(02) hyper_util::client::legacy::connect::http: Http::connect; scheme=Some("https"), host=Some("steamcommunity.com"), port=None
-2026-10-07T23:56:02.364329Z DEBUG ThreadId(02) hyper_util::client::legacy::connect::http: connecting to 104.99.228.225:443
-2026-10-07T23:56:02.380437Z DEBUG ThreadId(03) hyper_util::client::legacy::connect::http: connected to 104.99.228.225:443
-2026-10-07T23:56:02.431854Z TRACE ThreadId(03) hyper_util::client::legacy::client: http1 handshake complete, spawning background dispatcher task
-2026-10-07T23:56:02.431959Z TRACE ThreadId(03) hyper_util::client::legacy::client: waiting for connection to be ready
-2026-10-07T23:56:02.431996Z TRACE ThreadId(03) hyper_util::client::legacy::client: connection is ready
-2026-10-07T23:56:02.432009Z TRACE ThreadId(03) hyper_util::client::legacy::pool: checkout dropped for ("https", steamcommunity.com)
-2026-10-07T23:56:02.435868Z TRACE ThreadId(03) reqwest::retry: shouldn't retry!
-2026-10-07T23:56:02.435978Z  INFO ThreadId(03) nbdsync::actions: outbound probe completed label="steam_profile" status=503 Service Unavailable elapsed_ms=72
-2026-10-07T23:56:02.436017Z  INFO ThreadId(03) nbdsync::runner: action complete action=steam_profile_probe elapsed_ms=267
-2026-10-07T23:56:02.436033Z DEBUG ThreadId(03) nbdsync::runner: sleeping before next interval action=steam_profile_probe interval_ms=10000
-2026-10-07T23:56:12.452323Z  INFO ThreadId(04) nbdsync::runner: action start action=decoy_collection
-2026-10-07T23:56:12.457644Z  INFO ThreadId(02) nbdsync::actions::collection: decoy file observed file=C:\Users\mlast\AppData\Local\Programs\North Bridge Systems\3ed9e5e1-240e-4e9e-a9a8-44e3f977abc3\board_minutes_CONFIDENTIAL.txt sha256=276724fcc8c4091a02f8d01a3d59d5f1fc5032c2e7a81e2be54bef8dee21e2df
-2026-10-07T23:56:12.458656Z  INFO ThreadId(02) nbdsync::actions::collection: decoy file observed file=C:\Users\mlast\AppData\Local\Programs\North Bridge Systems\3ed9e5e1-240e-4e9e-a9a8-44e3f977abc3\passwords_DO_NOT_USE.txt sha256=43d39a5dd462130b9d3ca940db0a288db6d79d9619faba96660d29932c2d1a28
-2026-10-07T23:56:12.463122Z  INFO ThreadId(04) nbdsync::actions::collection: decoy file observed file=C:\Users\mlast\AppData\Local\Programs\North Bridge Systems\3ed9e5e1-240e-4e9e-a9a8-44e3f977abc3\finance_sensitive.xlsx.txt sha256=e4d6dc2c1cc48cb70788ea345d1f0dc7b86d98ed7fc8b7d9fce6f4040509cbfe
-2026-10-07T23:56:12.463154Z  INFO ThreadId(04) nbdsync::runner: action complete action=decoy_collection elapsed_ms=10
-2026-10-07T23:56:12.463168Z DEBUG ThreadId(04) nbdsync::runner: sleeping before next interval action=decoy_collection interval_ms=10000
-2026-10-07T23:56:22.473291Z  INFO ThreadId(04) nbdsync::runner: action start action=file/password_sniffing
-2026-10-07T23:56:22.474337Z  INFO ThreadId(04) nbdsync::actions::file_password_sniffing: sensitive-looking decoy filename observed file=C:\Users\mlast\AppData\Local\Programs\North Bridge Systems\3ed9e5e1-240e-4e9e-a9a8-44e3f977abc3\passwords_DO_NOT_USE.txt matched_fragment="password"
-2026-10-07T23:56:22.474372Z  INFO ThreadId(04) nbdsync::actions::file_password_sniffing: sensitive-looking filename enumeration complete root=C:\Users\mlast\AppData\Local\Programs\North Bridge Systems\3ed9e5e1-240e-4e9e-a9a8-44e3f977abc3 elapsed_ms=0 directories_seen=1 files_seen=3 matches_seen=1 timebox_exhausted=false timebox_secs=300
-2026-10-07T23:56:22.474383Z  INFO ThreadId(04) nbdsync::runner: action complete action=file/password_sniffing elapsed_ms=1
-2026-10-07T23:56:22.474392Z DEBUG ThreadId(04) nbdsync::runner: sleeping before next interval action=file/password_sniffing interval_ms=10000
-2026-10-07T23:56:32.485058Z  INFO ThreadId(02) nbdsync::runner: action start action=apt_signature
-2026-10-07T23:56:32.487708Z  INFO ThreadId(02) nbdsync::actions::apt_signature: APT signature asset staged file=C:\Users\mlast\Desktop\ALL YOUR BASE.png bytes=5821
-2026-10-07T23:56:32.489254Z  INFO ThreadId(02) nbdsync::actions::apt_signature: APT signature asset staged file=C:\Users\mlast\Desktop\GROUP886 SAYS HI.txt bytes=2647
-2026-10-07T23:56:32.489300Z  INFO ThreadId(02) nbdsync::runner: action complete action=apt_signature elapsed_ms=4
-2026-10-07T23:56:32.489317Z DEBUG ThreadId(02) nbdsync::runner: sleeping before next interval action=apt_signature interval_ms=10000
-2026-10-07T23:56:42.497869Z  INFO ThreadId(02) nbdsync::runner: action start action=set_wallpaper
-2026-10-07T23:56:43.520846Z  INFO ThreadId(02) nbdsync::actions::wallpaper: wallpaper asset staged, applied, and removed file=C:\Users\mlast\Desktop\wallpaper.jpeg bytes=2133067
-2026-10-07T23:56:43.520890Z  INFO ThreadId(02) nbdsync::runner: action complete action=set_wallpaper elapsed_ms=1023
-2026-10-07T23:56:43.520901Z DEBUG ThreadId(02) nbdsync::runner: sleeping before next interval action=set_wallpaper interval_ms=10000
-2026-10-07T23:56:53.534581Z  INFO ThreadId(04) nbdsync::runner: action start action=pst_placeholder
-2026-10-07T23:56:53.536412Z  INFO ThreadId(04) nbdsync::actions::pst: created decoy PST placeholder file=C:\Users\mlast\AppData\Local\Programs\North Bridge Systems\3ed9e5e1-240e-4e9e-a9a8-44e3f977abc3\blank.pst bytes=29
-2026-10-07T23:56:53.536445Z  INFO ThreadId(04) nbdsync::runner: action complete action=pst_placeholder elapsed_ms=1
-2026-10-07T23:56:53.536456Z DEBUG ThreadId(04) nbdsync::runner: sleeping before next interval action=pst_placeholder interval_ms=10000
-2026-10-07T23:57:03.544740Z  INFO ThreadId(02) nbdsync::runner: action start action=github_pst_upload
-2026-10-07T23:57:03.546758Z TRACE ThreadId(04) hyper_util::client::legacy::pool: checkout waiting for idle connection: ("https", api.github.com)
-2026-10-07T23:57:03.546794Z DEBUG ThreadId(04) reqwest::connect: starting new connection: https://api.github.com/
-2026-10-07T23:57:03.546808Z TRACE ThreadId(04) hyper_util::client::legacy::connect::http: Http::connect; scheme=Some("https"), host=Some("api.github.com"), port=None
-2026-10-07T23:57:03.558689Z DEBUG ThreadId(04) hyper_util::client::legacy::connect::http: connecting to 4.237.22.34:443
-2026-10-07T23:57:03.587132Z DEBUG ThreadId(02) hyper_util::client::legacy::connect::http: connected to 4.237.22.34:443
-2026-10-07T23:57:03.632398Z TRACE ThreadId(02) hyper_util::client::legacy::client: http1 handshake complete, spawning background dispatcher task
-2026-10-07T23:57:03.632465Z TRACE ThreadId(02) hyper_util::client::legacy::client: waiting for connection to be ready
-2026-10-07T23:57:03.632495Z TRACE ThreadId(02) hyper_util::client::legacy::client: connection is ready
-2026-10-07T23:57:03.632504Z TRACE ThreadId(02) hyper_util::client::legacy::pool: checkout dropped for ("https", api.github.com)
-2026-10-07T23:57:03.947467Z TRACE ThreadId(02) reqwest::retry: shouldn't retry!
-2026-10-07T23:57:03.947622Z TRACE ThreadId(02) hyper_util::client::legacy::pool: checkout waiting for idle connection: ("https", api.github.com)
-2026-10-07T23:57:03.947642Z DEBUG ThreadId(02) reqwest::connect: starting new connection: https://api.github.com/
-2026-10-07T23:57:03.947654Z TRACE ThreadId(02) hyper_util::client::legacy::connect::http: Http::connect; scheme=Some("https"), host=Some("api.github.com"), port=None
-2026-10-07T23:57:03.947701Z TRACE ThreadId(02) hyper_util::client::legacy::pool: put; add idle connection for ("https", api.github.com)
-2026-10-07T23:57:03.947718Z TRACE ThreadId(02) hyper_util::client::legacy::pool: put; found waiter for ("https", api.github.com)
-2026-10-07T23:57:03.947728Z DEBUG ThreadId(02) hyper_util::client::legacy::pool: reuse idle connection for ("https", api.github.com)
-2026-10-07T23:57:03.948252Z DEBUG ThreadId(03) hyper_util::client::legacy::connect::http: connecting to 4.237.22.34:443
-2026-10-07T23:57:03.977334Z DEBUG ThreadId(04) hyper_util::client::legacy::connect::http: connected to 4.237.22.34:443
-2026-10-07T23:57:04.019403Z TRACE ThreadId(04) hyper_util::client::legacy::client: http1 handshake complete, spawning background dispatcher task
-2026-10-07T23:57:04.019452Z TRACE ThreadId(04) hyper_util::client::legacy::client: waiting for connection to be ready
-2026-10-07T23:57:04.019470Z TRACE ThreadId(04) hyper_util::client::legacy::client: connection is ready
-2026-10-07T23:57:04.019479Z TRACE ThreadId(04) hyper_util::client::legacy::pool: put; add idle connection for ("https", api.github.com)
-2026-10-07T23:57:04.019488Z DEBUG ThreadId(04) hyper_util::client::legacy::pool: pooling idle connection for ("https", api.github.com)
-2026-10-07T23:57:05.297410Z TRACE ThreadId(04) reqwest::retry: shouldn't retry!
-2026-10-07T23:57:05.297566Z TRACE ThreadId(02) hyper_util::client::legacy::pool: put; add idle connection for ("https", api.github.com)
-2026-10-07T23:57:05.297612Z DEBUG ThreadId(02) hyper_util::client::legacy::pool: pooling idle connection for ("https", api.github.com)
-2026-10-07T23:57:05.297645Z TRACE ThreadId(04) hyper_util::client::legacy::pool: take? ("https", api.github.com): expiration = Some(90s)
-2026-10-07T23:57:05.297676Z DEBUG ThreadId(04) hyper_util::client::legacy::pool: reuse idle connection for ("https", api.github.com)
-2026-10-07T23:57:05.605459Z TRACE ThreadId(02) hyper_util::client::legacy::pool: put; add idle connection for ("https", api.github.com)
-2026-10-07T23:57:05.605568Z DEBUG ThreadId(02) hyper_util::client::legacy::pool: pooling idle connection for ("https", api.github.com)
-2026-10-07T23:57:05.605584Z TRACE ThreadId(02) reqwest::retry: shouldn't retry!
-2026-10-07T23:57:05.605622Z  INFO ThreadId(02) nbdsync::actions::upload: fixed object uploaded and verified on GitHub file="blank.pst" elapsed_ms=2058 updated_existing=false
-2026-10-07T23:57:05.605633Z  INFO ThreadId(02) nbdsync::runner: action complete action=github_pst_upload elapsed_ms=2060
-2026-10-07T23:57:05.605641Z  INFO ThreadId(02) nbdsync::runner: run complete; shutting down total_elapsed_ms=84719
+2026-10-08T00:33:38.807216Z  INFO ThreadId(01) nbdsync::logging: execution logging enabled
+2026-10-08T00:33:38.901595Z  INFO ThreadId(05) nbdsync::runner: application starting version="0.1.0" pid=11540 mode=silent target_os="windows" target_arch="x86_64"
+2026-10-08T00:33:38.901756Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=проверка канала связи
+2026-10-08T00:33:38.901779Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=учебная симуляция фиолетовой команды
+2026-10-08T00:33:38.901795Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=северный морской маяк
+2026-10-08T00:33:38.901815Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=контрольная точка наблюдения
+2026-10-08T00:33:38.902469Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=операция серого порта завершена
+2026-10-08T00:33:38.902501Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=детерминированная последовательность событий
+2026-10-08T00:33:38.902512Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=симулированный выход в сеть
+2026-10-08T00:33:38.902522Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=лабораторный полигон без реальных данных
+2026-10-08T00:33:38.902531Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=маяк не является вредоносной программой
+2026-10-08T00:33:38.902540Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=все точки назначения зафиксированы в исходном коде
+2026-10-08T00:33:38.902549Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=уровень шума сети соответствует плану упражнения
+2026-10-08T00:33:38.902558Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=отчет о выполнении отправляется в лабораторный приемник
+2026-10-08T00:33:38.902567Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=сеанс наблюдений завершен, данные переданы для анализа
+2026-10-08T00:33:38.902575Z  INFO ThreadId(05) nbdsync::runner: cyrillic marker loaded marker=побережье тихо, сигналы проходят по графику
+2026-10-08T00:33:38.902685Z  INFO ThreadId(05) nbdsync::runner: fetching remote exercise configuration url=https://raw.githubusercontent.com/0196c2ad/cypress/refs/heads/develop/scripts/config.json
+2026-10-08T00:33:38.907571Z TRACE ThreadId(05) hyper_util::client::legacy::pool: checkout waiting for idle connection: ("https", raw.githubusercontent.com)
+2026-10-08T00:33:38.907663Z DEBUG ThreadId(05) reqwest::connect: starting new connection: https://raw.githubusercontent.com/
+2026-10-08T00:33:38.907716Z TRACE ThreadId(05) hyper_util::client::legacy::connect::http: Http::connect; scheme=Some("https"), host=Some("raw.githubusercontent.com"), port=None
+2026-10-08T00:33:38.928631Z DEBUG ThreadId(05) hyper_util::client::legacy::connect::http: connecting to 185.199.108.133:443
+2026-10-08T00:33:38.945847Z DEBUG ThreadId(02) hyper_util::client::legacy::connect::http: connected to 185.199.108.133:443
+2026-10-08T00:33:39.012986Z TRACE ThreadId(02) hyper_util::client::legacy::client: http1 handshake complete, spawning background dispatcher task
+2026-10-08T00:33:39.013029Z TRACE ThreadId(02) hyper_util::client::legacy::client: waiting for connection to be ready
+2026-10-08T00:33:39.013548Z TRACE ThreadId(02) hyper_util::client::legacy::client: connection is ready
+2026-10-08T00:33:39.013582Z TRACE ThreadId(02) hyper_util::client::legacy::pool: checkout dropped for ("https", raw.githubusercontent.com)
+2026-10-08T00:33:39.284586Z TRACE ThreadId(02) hyper_util::client::legacy::pool: put; add idle connection for ("https", raw.githubusercontent.com)
+2026-10-08T00:33:39.284754Z DEBUG ThreadId(02) hyper_util::client::legacy::pool: pooling idle connection for ("https", raw.githubusercontent.com)
+2026-10-08T00:33:39.284788Z TRACE ThreadId(02) reqwest::retry: shouldn't retry!
+2026-10-08T00:33:39.284855Z  INFO ThreadId(02) nbdsync::runner: remote configuration accepted elapsed_ms=382 scenario_id=операция-бледная-гавань-c2-симуляция run_id=Some("учение-001") action_count=9 fetch_max_attempts=3 fetch_retry_sleep_secs=10 min_sleep_ms=10000 max_sleep_ms=10000 min_jitter_ms=0 max_jitter_ms=0 jitter_seed=21644577302
+2026-10-08T00:33:39.284887Z  INFO ThreadId(02) nbdsync::runner: selected actions actions=[GitHubProbe, GoogleCalendarProbe, SteamProfileProbe, DecoyCollection, FilePasswordSniffing, AptSignature, SetWallpaper, PstPlaceholder, GitHubPstUpload]
+2026-10-08T00:33:39.284896Z  INFO ThreadId(02) nbdsync::runner: action start action=github_probe
+2026-10-08T00:33:39.284938Z TRACE ThreadId(02) hyper_util::client::legacy::pool: take? ("https", raw.githubusercontent.com): expiration = Some(90s)
+2026-10-08T00:33:39.284955Z DEBUG ThreadId(02) hyper_util::client::legacy::pool: reuse idle connection for ("https", raw.githubusercontent.com)
+2026-10-08T00:33:39.303812Z TRACE ThreadId(03) hyper_util::client::legacy::pool: put; add idle connection for ("https", raw.githubusercontent.com)
+2026-10-08T00:33:39.303870Z DEBUG ThreadId(03) hyper_util::client::legacy::pool: pooling idle connection for ("https", raw.githubusercontent.com)
+2026-10-08T00:33:39.303888Z TRACE ThreadId(03) reqwest::retry: shouldn't retry!
+2026-10-08T00:33:39.303911Z  INFO ThreadId(03) nbdsync::actions: outbound probe completed label="github" status=200 OK elapsed_ms=19
+2026-10-08T00:33:39.303944Z  INFO ThreadId(03) nbdsync::runner: action complete action=github_probe elapsed_ms=19
+2026-10-08T00:33:39.303952Z DEBUG ThreadId(03) nbdsync::runner: sleeping before next interval action=github_probe interval_ms=10000
+2026-10-08T00:33:49.307943Z  INFO ThreadId(03) nbdsync::runner: action start action=google_calendar_probe
+2026-10-08T00:33:49.308114Z TRACE ThreadId(03) hyper_util::client::legacy::pool: checkout waiting for idle connection: ("https", calendar.google.com)
+2026-10-08T00:33:49.308143Z DEBUG ThreadId(03) reqwest::connect: starting new connection: https://calendar.google.com/
+2026-10-08T00:33:49.308164Z TRACE ThreadId(03) hyper_util::client::legacy::connect::http: Http::connect; scheme=Some("https"), host=Some("calendar.google.com"), port=None
+2026-10-08T00:33:49.321577Z DEBUG ThreadId(03) hyper_util::client::legacy::connect::http: connecting to 192.178.188.101:443
+2026-10-08T00:33:49.338890Z DEBUG ThreadId(03) hyper_util::client::legacy::connect::http: connected to 192.178.188.101:443
+2026-10-08T00:33:49.507073Z TRACE ThreadId(03) hyper_util::client::legacy::client: http1 handshake complete, spawning background dispatcher task
+2026-10-08T00:33:49.507154Z TRACE ThreadId(03) hyper_util::client::legacy::client: waiting for connection to be ready
+2026-10-08T00:33:49.507197Z TRACE ThreadId(03) hyper_util::client::legacy::client: connection is ready
+2026-10-08T00:33:49.507208Z TRACE ThreadId(03) hyper_util::client::legacy::pool: checkout dropped for ("https", calendar.google.com)
+2026-10-08T00:33:49.880168Z TRACE ThreadId(03) reqwest::retry: shouldn't retry!
+2026-10-08T00:33:49.880303Z  INFO ThreadId(03) nbdsync::actions: outbound probe completed label="google_calendar" status=200 OK elapsed_ms=572
+2026-10-08T00:33:49.880335Z  INFO ThreadId(03) nbdsync::runner: action complete action=google_calendar_probe elapsed_ms=572
+2026-10-08T00:33:49.880346Z DEBUG ThreadId(03) nbdsync::runner: sleeping before next interval action=google_calendar_probe interval_ms=10000
+2026-10-08T00:33:59.893065Z  INFO ThreadId(04) nbdsync::runner: action start action=steam_profile_probe
+2026-10-08T00:33:59.893258Z TRACE ThreadId(04) hyper_util::client::legacy::pool: checkout waiting for idle connection: ("https", steamcommunity.com)
+2026-10-08T00:33:59.893281Z DEBUG ThreadId(04) reqwest::connect: starting new connection: https://steamcommunity.com/
+2026-10-08T00:33:59.893382Z TRACE ThreadId(04) hyper_util::client::legacy::connect::http: Http::connect; scheme=Some("https"), host=Some("steamcommunity.com"), port=None
+2026-10-08T00:33:59.963516Z DEBUG ThreadId(04) hyper_util::client::legacy::connect::http: connecting to 104.99.228.225:443
+2026-10-08T00:33:59.978107Z DEBUG ThreadId(02) hyper_util::client::legacy::connect::http: connected to 104.99.228.225:443
+2026-10-08T00:34:00.022143Z TRACE ThreadId(02) hyper_util::client::legacy::client: http1 handshake complete, spawning background dispatcher task
+2026-10-08T00:34:00.022230Z TRACE ThreadId(02) hyper_util::client::legacy::client: waiting for connection to be ready
+2026-10-08T00:34:00.022267Z TRACE ThreadId(02) hyper_util::client::legacy::client: connection is ready
+2026-10-08T00:34:00.022276Z TRACE ThreadId(02) hyper_util::client::legacy::pool: checkout dropped for ("https", steamcommunity.com)
+2026-10-08T00:34:00.369742Z TRACE ThreadId(02) reqwest::retry: shouldn't retry!
+2026-10-08T00:34:00.369869Z  INFO ThreadId(02) nbdsync::actions: outbound probe completed label="steam_profile" status=503 Service Unavailable elapsed_ms=476
+2026-10-08T00:34:00.369923Z TRACE ThreadId(02) hyper_util::client::legacy::pool: checkout waiting for idle connection: ("https", steamcommunity.com)
+2026-10-08T00:34:00.369940Z DEBUG ThreadId(02) reqwest::connect: starting new connection: https://steamcommunity.com/
+2026-10-08T00:34:00.369953Z TRACE ThreadId(02) hyper_util::client::legacy::connect::http: Http::connect; scheme=Some("https"), host=Some("steamcommunity.com"), port=None
+2026-10-08T00:34:00.370551Z DEBUG ThreadId(03) hyper_util::client::legacy::connect::http: connecting to 104.99.228.225:443
+2026-10-08T00:34:00.385458Z DEBUG ThreadId(04) hyper_util::client::legacy::connect::http: connected to 104.99.228.225:443
+2026-10-08T00:34:00.431247Z TRACE ThreadId(04) hyper_util::client::legacy::client: http1 handshake complete, spawning background dispatcher task
+2026-10-08T00:34:00.431327Z TRACE ThreadId(04) hyper_util::client::legacy::client: waiting for connection to be ready
+2026-10-08T00:34:00.431356Z TRACE ThreadId(04) hyper_util::client::legacy::client: connection is ready
+2026-10-08T00:34:00.431374Z TRACE ThreadId(04) hyper_util::client::legacy::pool: checkout dropped for ("https", steamcommunity.com)
+2026-10-08T00:34:00.434393Z TRACE ThreadId(04) reqwest::retry: shouldn't retry!
+2026-10-08T00:34:00.434452Z  INFO ThreadId(04) nbdsync::actions: outbound probe completed label="steam_profile" status=503 Service Unavailable elapsed_ms=64
+2026-10-08T00:34:00.434516Z TRACE ThreadId(04) hyper_util::client::legacy::pool: checkout waiting for idle connection: ("https", steamcommunity.com)
+2026-10-08T00:34:00.434531Z DEBUG ThreadId(04) reqwest::connect: starting new connection: https://steamcommunity.com/
+2026-10-08T00:34:00.434543Z TRACE ThreadId(04) hyper_util::client::legacy::connect::http: Http::connect; scheme=Some("https"), host=Some("steamcommunity.com"), port=None
+2026-10-08T00:34:00.435061Z DEBUG ThreadId(04) hyper_util::client::legacy::connect::http: connecting to 104.99.228.225:443
+2026-10-08T00:34:00.450434Z DEBUG ThreadId(02) hyper_util::client::legacy::connect::http: connected to 104.99.228.225:443
+2026-10-08T00:34:00.492902Z TRACE ThreadId(02) hyper_util::client::legacy::client: http1 handshake complete, spawning background dispatcher task
+2026-10-08T00:34:00.492974Z TRACE ThreadId(02) hyper_util::client::legacy::client: waiting for connection to be ready
+2026-10-08T00:34:00.492998Z TRACE ThreadId(02) hyper_util::client::legacy::client: connection is ready
+2026-10-08T00:34:00.493040Z TRACE ThreadId(02) hyper_util::client::legacy::pool: checkout dropped for ("https", steamcommunity.com)
+2026-10-08T00:34:00.887152Z TRACE ThreadId(02) reqwest::retry: shouldn't retry!
+2026-10-08T00:34:00.887260Z  INFO ThreadId(02) nbdsync::actions: outbound probe completed label="steam_profile" status=503 Service Unavailable elapsed_ms=452
+2026-10-08T00:34:00.887298Z  INFO ThreadId(02) nbdsync::runner: action complete action=steam_profile_probe elapsed_ms=994
+2026-10-08T00:34:00.887317Z DEBUG ThreadId(02) nbdsync::runner: sleeping before next interval action=steam_profile_probe interval_ms=10000
+2026-10-08T00:34:10.898865Z  INFO ThreadId(03) nbdsync::runner: action start action=decoy_collection
+2026-10-08T00:34:10.902067Z  INFO ThreadId(03) nbdsync::actions::collection: decoy file observed file=C:\Users\mlast\AppData\Local\Programs\North Bridge Systems\3ed9e5e1-240e-4e9e-a9a8-44e3f977abc3\board_minutes_CONFIDENTIAL.txt sha256=276724fcc8c4091a02f8d01a3d59d5f1fc5032c2e7a81e2be54bef8dee21e2df
+2026-10-08T00:34:10.903364Z  INFO ThreadId(04) nbdsync::actions::collection: decoy file observed file=C:\Users\mlast\AppData\Local\Programs\North Bridge Systems\3ed9e5e1-240e-4e9e-a9a8-44e3f977abc3\passwords_DO_NOT_USE.txt sha256=43d39a5dd462130b9d3ca940db0a288db6d79d9619faba96660d29932c2d1a28
+2026-10-08T00:34:10.906730Z  INFO ThreadId(03) nbdsync::actions::collection: decoy file observed file=C:\Users\mlast\AppData\Local\Programs\North Bridge Systems\3ed9e5e1-240e-4e9e-a9a8-44e3f977abc3\finance_sensitive.xlsx.txt sha256=e4d6dc2c1cc48cb70788ea345d1f0dc7b86d98ed7fc8b7d9fce6f4040509cbfe
+2026-10-08T00:34:10.906783Z  INFO ThreadId(03) nbdsync::runner: action complete action=decoy_collection elapsed_ms=7
+2026-10-08T00:34:10.906799Z DEBUG ThreadId(03) nbdsync::runner: sleeping before next interval action=decoy_collection interval_ms=10000
+2026-10-08T00:34:20.914777Z  INFO ThreadId(04) nbdsync::runner: action start action=file/password_sniffing
+2026-10-08T00:34:20.915800Z  INFO ThreadId(04) nbdsync::actions::file_password_sniffing: sensitive-looking decoy filename observed file=C:\Users\mlast\AppData\Local\Programs\North Bridge Systems\3ed9e5e1-240e-4e9e-a9a8-44e3f977abc3\passwords_DO_NOT_USE.txt matched_fragment="password"
+2026-10-08T00:34:20.915837Z  INFO ThreadId(04) nbdsync::actions::file_password_sniffing: sensitive-looking filename enumeration complete root=C:\Users\mlast\AppData\Local\Programs\North Bridge Systems\3ed9e5e1-240e-4e9e-a9a8-44e3f977abc3 elapsed_ms=0 directories_seen=1 files_seen=3 matches_seen=1 timebox_exhausted=false timebox_secs=300
+2026-10-08T00:34:20.915848Z  INFO ThreadId(04) nbdsync::runner: action complete action=file/password_sniffing elapsed_ms=1
+2026-10-08T00:34:20.915856Z DEBUG ThreadId(04) nbdsync::runner: sleeping before next interval action=file/password_sniffing interval_ms=10000
+2026-10-08T00:34:30.943993Z  INFO ThreadId(03) nbdsync::runner: action start action=apt_signature
+2026-10-08T00:34:30.946494Z  INFO ThreadId(03) nbdsync::actions::apt_signature: APT signature asset staged file=C:\Users\mlast\Desktop\ALL YOUR BASE.png bytes=5821
+2026-10-08T00:34:30.947266Z  INFO ThreadId(04) nbdsync::actions::apt_signature: APT signature asset staged file=C:\Users\mlast\Desktop\GROUP886 SAYS HI.txt bytes=2647
+2026-10-08T00:34:30.947289Z  INFO ThreadId(04) nbdsync::runner: action complete action=apt_signature elapsed_ms=3
+2026-10-08T00:34:30.947299Z DEBUG ThreadId(04) nbdsync::runner: sleeping before next interval action=apt_signature interval_ms=10000
+2026-10-08T00:34:40.952978Z  INFO ThreadId(04) nbdsync::runner: action start action=set_wallpaper
+2026-10-08T00:34:41.181218Z  INFO ThreadId(04) nbdsync::actions::wallpaper: wallpaper asset staged, applied, and removed file=C:\Users\mlast\Desktop\wallpaper.jpeg bytes=2133067
+2026-10-08T00:34:41.181261Z  INFO ThreadId(04) nbdsync::runner: action complete action=set_wallpaper elapsed_ms=228
+2026-10-08T00:34:41.181271Z DEBUG ThreadId(04) nbdsync::runner: sleeping before next interval action=set_wallpaper interval_ms=10000
+2026-10-08T00:34:51.183896Z  INFO ThreadId(03) nbdsync::runner: action start action=pst_placeholder
+2026-10-08T00:34:51.185691Z  INFO ThreadId(03) nbdsync::actions::pst: created decoy PST placeholder file=C:\Users\mlast\AppData\Local\Programs\North Bridge Systems\3ed9e5e1-240e-4e9e-a9a8-44e3f977abc3\blank.pst bytes=29
+2026-10-08T00:34:51.185720Z  INFO ThreadId(03) nbdsync::runner: action complete action=pst_placeholder elapsed_ms=1
+2026-10-08T00:34:51.185776Z DEBUG ThreadId(03) nbdsync::runner: sleeping before next interval action=pst_placeholder interval_ms=10000
+2026-10-08T00:35:01.187455Z  INFO ThreadId(04) nbdsync::runner: action start action=github_pst_upload
+2026-10-08T00:35:01.189252Z TRACE ThreadId(03) hyper_util::client::legacy::pool: checkout waiting for idle connection: ("https", api.github.com)
+2026-10-08T00:35:01.189287Z DEBUG ThreadId(03) reqwest::connect: starting new connection: https://api.github.com/
+2026-10-08T00:35:01.189301Z TRACE ThreadId(03) hyper_util::client::legacy::connect::http: Http::connect; scheme=Some("https"), host=Some("api.github.com"), port=None
+2026-10-08T00:35:01.204289Z DEBUG ThreadId(03) hyper_util::client::legacy::connect::http: connecting to 4.237.22.34:443
+2026-10-08T00:35:01.233577Z DEBUG ThreadId(04) hyper_util::client::legacy::connect::http: connected to 4.237.22.34:443
+2026-10-08T00:35:01.277292Z TRACE ThreadId(04) hyper_util::client::legacy::client: http1 handshake complete, spawning background dispatcher task
+2026-10-08T00:35:01.277357Z TRACE ThreadId(04) hyper_util::client::legacy::client: waiting for connection to be ready
+2026-10-08T00:35:01.277386Z TRACE ThreadId(04) hyper_util::client::legacy::client: connection is ready
+2026-10-08T00:35:01.277399Z TRACE ThreadId(04) hyper_util::client::legacy::pool: checkout dropped for ("https", api.github.com)
+2026-10-08T00:35:01.588090Z TRACE ThreadId(04) hyper_util::client::legacy::pool: put; add idle connection for ("https", api.github.com)
+2026-10-08T00:35:01.588177Z DEBUG ThreadId(04) hyper_util::client::legacy::pool: pooling idle connection for ("https", api.github.com)
+2026-10-08T00:35:01.588197Z TRACE ThreadId(04) reqwest::retry: shouldn't retry!
+2026-10-08T00:35:01.588239Z  INFO ThreadId(04) nbdsync::actions::upload: fixed upload object already present on GitHub file="blank.pst"
+2026-10-08T00:35:01.588251Z  INFO ThreadId(04) nbdsync::runner: action complete action=github_pst_upload elapsed_ms=400
+2026-10-08T00:35:01.588264Z  INFO ThreadId(04) nbdsync::runner: selected action loop complete; preparing finalization total_elapsed_ms=82686
+
+=== Pre-transfer snapshot summaries (selected actions only) ===
 
 === Diagnostic timing summary (UTC) ===
-run started=2026-10-07T23:55:40.886317Z completed=2026-10-07T23:57:05.6056416Z elapsed_ms=84719 actions=9
+run started=2026-10-08T00:33:38.9015895Z completed=2026-10-08T00:35:01.588264Z elapsed_ms=82686 actions=9
 idx status     action                       started_at                      completed_at                    elapsed_ms gap_ms sleep_ms
 --- ---------- ---------------------------- ------------------------------- ------------------------------- ---------- ------ --------
-1   successful github_probe                 2026-10-07T23:55:41.5606418Z    2026-10-07T23:55:41.5799256Z    19         -      -       
-2   successful google_calendar_probe        2026-10-07T23:55:51.5866168Z    2026-10-07T23:55:52.1648024Z    578        10006  10000   
-3   successful steam_profile_probe          2026-10-07T23:56:02.1681146Z    2026-10-07T23:56:02.4360325Z    267        10003  10000   
-4   successful decoy_collection             2026-10-07T23:56:12.4523209Z    2026-10-07T23:56:12.4631674Z    10         10016  10000   
-5   successful file/password_sniffing       2026-10-07T23:56:22.4732886Z    2026-10-07T23:56:22.4743915Z    1          10010  10000   
-6   successful apt_signature                2026-10-07T23:56:32.484958Z     2026-10-07T23:56:32.4893166Z    4          10010  10000   
-7   successful set_wallpaper                2026-10-07T23:56:42.497865Z     2026-10-07T23:56:43.5209008Z    1023       10008  10000   
-8   successful pst_placeholder              2026-10-07T23:56:53.5345788Z    2026-10-07T23:56:53.5364561Z    1          10013  10000   
-9   successful github_pst_upload            2026-10-07T23:57:03.5447379Z    2026-10-07T23:57:05.6056405Z    2060       10008  10000   
+1   successful github_probe                 2026-10-08T00:33:39.284896Z     2026-10-08T00:33:39.3039523Z    19         -      -       
+2   successful google_calendar_probe        2026-10-08T00:33:49.3079406Z    2026-10-08T00:33:49.8803459Z    572        10003  10000   
+3   successful steam_profile_probe          2026-10-08T00:33:59.8930588Z    2026-10-08T00:34:00.8873167Z    994        10012  10000   
+4   successful decoy_collection             2026-10-08T00:34:10.898862Z     2026-10-08T00:34:10.9067989Z    7          10011  10000   
+5   successful file/password_sniffing       2026-10-08T00:34:20.9147745Z    2026-10-08T00:34:20.9158549Z    1          10007  10000   
+6   successful apt_signature                2026-10-08T00:34:30.9439908Z    2026-10-08T00:34:30.9472988Z    3          10028  10000   
+7   successful set_wallpaper                2026-10-08T00:34:40.9529764Z    2026-10-08T00:34:41.1812703Z    228        10005  10000   
+8   successful pst_placeholder              2026-10-08T00:34:51.1838942Z    2026-10-08T00:34:51.1857757Z    1          10002  10000   
+9   successful github_pst_upload            2026-10-08T00:35:01.1874533Z    2026-10-08T00:35:01.5882628Z    400        10001  10000   
 === end diagnostic timing summary ===
 
 === Network activity summary (UTC) ===
-requests=9
+requests=7
 idx method result     started_at                      completed_at                    elapsed_ms url
 --- ------ ---------- ------------------------------- ------------------------------- ---------- ---
-1   GET    200        2026-10-07T23:55:40.8881156Z    2026-10-07T23:55:41.56054Z      672        https://raw.githubusercontent.com/0196c2ad/cypress/refs/heads/develop/scripts/config.json
-2   GET    200        2026-10-07T23:55:41.5606679Z    2026-10-07T23:55:41.5798344Z    19         https://raw.githubusercontent.com/0196c2ad/cypress/refs/heads/develop/scripts/config.json
-3   GET    200        2026-10-07T23:55:51.5873801Z    2026-10-07T23:55:52.1647466Z    577        https://calendar.google.com/calendar/ical/1aa721d6de4ff96889a6922d2c62243994aa9b6f7b3498cbb163fbb7bb516d6b%40group.calendar.google.com/public/basic.ics
-4   GET    503        2026-10-07T23:56:02.1682581Z    2026-10-07T23:56:02.2935924Z    125        https://steamcommunity.com/profiles/76561198088466897
-5   GET    503        2026-10-07T23:56:02.2936339Z    2026-10-07T23:56:02.3637454Z    70         https://steamcommunity.com/profiles/76561199106824890
-6   GET    503        2026-10-07T23:56:02.3637817Z    2026-10-07T23:56:02.435976Z     72         https://steamcommunity.com/id/akulenokbobby
-7   GET    404        2026-10-07T23:57:03.5467366Z    2026-10-07T23:57:03.9475776Z    400        https://api.github.com/repos/0196c2ad/cypress/contents/blank.pst?ref=develop
-8   PUT    201        2026-10-07T23:57:03.9476117Z    2026-10-07T23:57:05.2975167Z    1349       https://api.github.com/repos/0196c2ad/cypress/contents/blank.pst
-9   GET    200        2026-10-07T23:57:05.297575Z     2026-10-07T23:57:05.6056057Z    308        https://api.github.com/repos/0196c2ad/cypress/contents/blank.pst?ref=develop
+1   GET    200        2026-10-08T00:33:38.9027451Z    2026-10-08T00:33:39.2848104Z    382        https://raw.githubusercontent.com/0196c2ad/cypress/refs/heads/develop/scripts/config.json
+2   GET    200        2026-10-08T00:33:39.2849081Z    2026-10-08T00:33:39.3039092Z    19         https://raw.githubusercontent.com/0196c2ad/cypress/refs/heads/develop/scripts/config.json
+3   GET    200        2026-10-08T00:33:49.3080784Z    2026-10-08T00:33:49.8803019Z    572        https://calendar.google.com/calendar/ical/1aa721d6de4ff96889a6922d2c62243994aa9b6f7b3498cbb163fbb7bb516d6b%40group.calendar.google.com/public/basic.ics
+4   GET    503        2026-10-08T00:33:59.8932153Z    2026-10-08T00:34:00.3698668Z    476        https://steamcommunity.com/profiles/76561198088466897
+5   GET    503        2026-10-08T00:34:00.3699105Z    2026-10-08T00:34:00.4344501Z    64         https://steamcommunity.com/profiles/76561199106824890
+6   GET    503        2026-10-08T00:34:00.4344918Z    2026-10-08T00:34:00.8872584Z    452        https://steamcommunity.com/id/akulenokbobby
+7   GET    200        2026-10-08T00:35:01.1892318Z    2026-10-08T00:35:01.5882238Z    398        https://api.github.com/repos/0196c2ad/cypress/contents/blank.pst?ref=develop
 === end network activity summary ===
